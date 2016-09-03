@@ -13,9 +13,10 @@
 
 
 ### JSON Data
-[JSON Generator](http://www.json-generator.com/)
+Mock data generated using [JSON Generator](http://www.json-generator.com/)
 
-**Template**
+The following template was used to generate the data.
+
 ```js
 
 {

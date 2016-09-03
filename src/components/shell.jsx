@@ -23,6 +23,11 @@ export class Shell extends React.Component {
                 <div className="container">
                     {this.props.children}
                 </div>
+
+                <hr/>
+                <div className="text-xs-center">
+                    <a href="https://github.com/pixelingene/tuts-react-router">Github Repo</a>
+                </div>
             </div>
 
         );

@@ -15,6 +15,7 @@ export class Category extends React.Component {
 
         return (
             <div className="jumbotron">
+                <small className="tag tag-default tag-pill">Category</small>
                 <h1>
                     {category.name.toUpperCase()}
                 </h1>
@@ -29,7 +30,7 @@ export class Category extends React.Component {
                                               className="list-group-item"
                                               key={p.id}
                                               activeClassName="active">
-                                            <span className="tag tag-default pull-xs-right">${p.price}</span>
+                                            <strong className="pull-xs-right">${p.price}</strong>
                                             <span>{p.name}</span>
                                         </Link>
                                     );

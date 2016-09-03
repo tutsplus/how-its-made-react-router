@@ -16,7 +16,9 @@ export class Product extends React.Component {
 
         return (
             <div>
+                <small className="tag tag-default tag-pill">Product</small>
                 <h1>{p.name}</h1>
+
                 <Link to={showReviews ? productReviewsUrl : productUrl}>
                     {showReviews ? 'Show Reviews' : 'Hide Reviews'}
                 </Link>
