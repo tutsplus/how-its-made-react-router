@@ -38,8 +38,12 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract(['css'])
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract(['css', 'sass'])
+            },
+            {
+                test: /\.json$/,
+                loader: 'json'
             }
         ]
     },

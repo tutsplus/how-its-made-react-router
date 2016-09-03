@@ -6,15 +6,14 @@ export class Shell extends React.Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-light bg-faded">
+                <nav className="navbar navbar-dark bg-inverse navbar-full">
                     <Link className="navbar-brand" to="/">tutsRR</Link>
                     <ul className="nav navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link" activeClassName="active" to="/category/hello">Category</Link>
+                            <Link className="nav-link" activeClassName="active" to="/" onlyActiveOnIndex={true}>Home</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" activeClassName="active" to="/product/hello">Product</Link>
-                        </li>
+                    </ul>
+                    <ul className="nav navbar-nav pull-xs-right">
                         <li className="nav-item">
                             <Link className="nav-link" activeClassName="active" to="/about">About</Link>
                         </li>
@@ -22,11 +21,7 @@ export class Shell extends React.Component {
                 </nav>
 
                 <div className="container">
-                    <div className="row">
-                        <div className="col-xs-12">
-                            {this.props.children}
-                        </div>
-                    </div>
+                    {this.props.children}
                 </div>
             </div>
 
